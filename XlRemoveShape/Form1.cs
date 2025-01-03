@@ -17,13 +17,15 @@ namespace Xl_Remove_shape_1._0.XlRemoveShape
         private DataTable dt;
         public Form1()
         {
-            if (Environment.MachineName == "xxxx") //Enter your PC Name for proper functioning of the program,
-                InitializeComponent();
-            else
-            {
-                CloseForm(null, null);
-                MessageBox.Show(@"Program has encountered unknown error and closing",caption: @"Error");
-            }
+           //Below Code can be enabled for Machine Specific Program Execution
+           //if (Environment.MachineName == "xxxx") //Enter your PC Name for proper functioning of the program,
+           //     InitializeComponent();
+           // else
+           //{
+           //     CloseForm(null, null);
+           //     MessageBox.Show(@"Program has encountered unknown error and closing",caption: @"Error");
+           // }
+            InitializeComponent();
             dt = new DataTable();
             var dc1 = new DataColumn("Sheet Name", typeof(string));
             var dc2 = new DataColumn("No of shapes", typeof(int));
