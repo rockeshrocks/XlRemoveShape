@@ -17,7 +17,7 @@ namespace Xl_Remove_shape_1._0.XlRemoveShape
         private DataTable dt;
         public Form1()
         {
-            if (Environment.MachineName == "T0030103")
+            if (Environment.MachineName == "xxxx") //Enter your PC Name for proper functioning of the program,
                 InitializeComponent();
             else
             {
